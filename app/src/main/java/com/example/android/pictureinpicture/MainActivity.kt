@@ -230,7 +230,7 @@ class MainActivity : AppCompatActivity() {
         // Hide the controls in picture-in-picture mode.
         mMovieView.hideControls()
         // Calculate the aspect ratio of the PiP screen.
-        mPictureInPictureParamsBuilder.setAspectRatio(Rational(mMovieView.width, mMovieView.width))
+        mPictureInPictureParamsBuilder.setAspectRatio(Rational(mMovieView.width, mMovieView.height))
         enterPictureInPictureMode(mPictureInPictureParamsBuilder.build())
     }
 
